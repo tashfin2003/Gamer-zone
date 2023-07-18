@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+header {
+    width: 1920px;
+    height: 80px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-cointainer{
+    display: flex;
+    justify-content: space-around;
+}
+.logo-cointainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700px;
+}
+nav>ul {
+    display: flex;
+}
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+.banner-container{
+    background-image: url("Images/Group\ 14.png");
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-between;
+    padding-bottom: 0px;
+}
+.banner-description{
+    align-items: ;
+}
+.banner-ul{
+    text-decoration: none;
+    list-style: none;
+}
+.banner-head1{
+    font-size: 30px;
+    
+}
+.banner-head2{
+    font-size: 95px;
+    font-weight: 800;
+    color: rgb(254, 83, 111);
+}
+.banner-img{
+    width: 100%;
+}
+.online-games{
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    margin-top: 30px;
+}
