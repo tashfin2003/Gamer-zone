@@ -7,7 +7,8 @@
     overflow: hidden;
 }
 header {
-    width: 1920px;
+    width: 100%;
+    margin: auto;
     height: 80px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -41,6 +42,8 @@ nav {
 }
 nav>ul {
     display: flex;
+    align-items: center;
+    gap: 5px;
 
 }
 nav li {
@@ -55,7 +58,14 @@ nav li a {
 }
 .nav-follow{
     display: flex;
+    background-color: gray ;
+    padding: 10px 15px;
+    border-radius: 5px;
+    gap: 15px;
     
+}
+.fa-facebook{
+    color: blue;
 }
 /* .head-social{
     padding-left: 10px;
@@ -292,7 +302,7 @@ footer{
     margin-top: 70px;
     background: black;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding-top: 150px;
     color: white;
     align-items: center;
