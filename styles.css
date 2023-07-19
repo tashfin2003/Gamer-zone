@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding:0px;
+    box-sizing: border-box;
 }
 header {
     width: 1920px;
@@ -27,6 +28,12 @@ nav {
     font-size: 45px;
     font-style: normal;
     font-weight: 700px;
+}
+.header-span{
+    color: #E34BBF;
+}
+.header-logo-txt{
+    font-weight: bolder;
 }
 nav>ul {
     display: flex;
@@ -72,6 +79,7 @@ nav li a {
     font-size: 20px;
     font-weight: 600;
     margin-left: 40px;
+    cursor: pointer;
     
 }
 .banner-button{
@@ -100,6 +108,37 @@ nav li a {
 }
 .funny-video{
     color: #BA50D4;
+}
+.content{
+    width: 40%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 0.8;
 }
 .games-description{
     align-items: center;
@@ -170,6 +209,23 @@ nav li a {
 .play-heading{
     color: #E34BBF;
 }
+/* many games styles */
+
+.games-btn{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+.many-games :hover{
+    color: #FF42A5;
+    border: 2px solid #FF42A5;
+}
+
 
 /* footer styles */
 
@@ -206,6 +262,8 @@ footer{
 .footer-container{
     width: 100%;
     padding: 70px 30px 20px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .social-icons{
     display: flex;
@@ -226,21 +284,30 @@ footer{
 .footer-nav{
     margin: 30px 0px;
     
+    
 }
 .footer-nav ul{
     display: flex;
     justify-content: center;
     
 }
-..footer-nav ul li{
+.footer-nav ul li{
     text-decoration: none;
 }
 .footer-nav ul li a{
     color: white;
     margin: 20px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
     opacity: 0.7;
     
 }
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
 
