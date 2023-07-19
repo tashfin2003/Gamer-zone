@@ -3,6 +3,9 @@
     padding:0px;
     box-sizing: border-box;
 }
+.body{
+    overflow: hidden;
+}
 header {
     width: 1920px;
     height: 80px;
@@ -68,8 +71,9 @@ nav li a {
     justify-content: space-around;
     align-items: center;
     background-image: url(Images/Group\ 14.png);
-    /* background-size: 50%; */
-    background-repeat: none;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     height: 100vh;
 }
 .banner-ul{
@@ -123,7 +127,7 @@ nav li a {
 .funny-video{
     color: #BA50D4;
 }
-.content{
+.container{
     width: 40%;
     height: 400px;
     position: absolute;
@@ -131,6 +135,10 @@ nav li a {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 10px 20px rgb(40, 40, 40);
+}
+img{
+    height: 100%;
+    font-weight: 100%;
 }
 .overlay{
     position: absolute;
@@ -181,11 +189,16 @@ nav li a {
     justify-content: center;
     
 }
+#img-id:hover  {
+ 
+ background: red;
+}
+
 /* features section */
 .features {
     margin-top: 130px;
     display: flex;
-    gap: 100px;
+    /* gap: 100px; */
     justify-content: space-around;
     text-align: center;
 }
@@ -196,7 +209,7 @@ nav li a {
 } */
 .feature-img img{
     height: 350px;
-    margin-left: 47px;
+    /* margin-left: 47px; */
 }
 .mini-photo{
     margin-top: 0px;
@@ -206,9 +219,10 @@ nav li a {
     width: 319px;
     height: 365.083px;
     padding: 4px;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
     bottom: 75px;
+    right: 150px;
 }
 .section-title{
     display: flex;
@@ -262,10 +276,13 @@ nav li a {
     justify-content: space-around;
     
 }
-.many-games :hover{
+.many-games:hover{
     color: #BA50D4;
     font-weight: bolder;
     border: 2px solid #FF42A5;
+}
+.games-btn{
+
 }
 
 
