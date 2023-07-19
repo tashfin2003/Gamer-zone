@@ -58,7 +58,7 @@ nav li a {
 }
 .nav-follow{
     display: flex;
-    background-color: gray ;
+    background-color: #E7E6E9 ;
     padding: 10px 15px;
     border-radius: 5px;
     gap: 15px;
@@ -67,13 +67,7 @@ nav li a {
 .fa-facebook{
     color: blue;
 }
-/* .head-social{
-    padding-left: 10px;
-}
-. */
-/* .head-social{
-    gap: 20px;
-} */
+
 
 /* banner styles start */
 .banner-container{
@@ -137,41 +131,7 @@ nav li a {
 .funny-video{
     color: #BA50D4;
 }
-.container{
-    width: 40%;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 10px 20px rgb(40, 40, 40);
-}
-img{
-    height: 100%;
-    font-weight: 100%;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-}
-.content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-.container:hover .overlay{
-    opacity: 0.8;
-}
+
 .games-description{
     align-items: center;
 }
@@ -208,18 +168,17 @@ img{
 .features {
     margin-top: 130px;
     display: flex;
-    /* gap: 100px; */
     justify-content: space-around;
     text-align: center;
 }
-
-/* .features .section-title{
-    border-left: 5px solid #FF900E;
-    padding-left: 20px;
-} */
 .feature-img img{
     height: 350px;
-    /* margin-left: 47px; */
+}
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .mini-photo{
     margin-top: 0px;
@@ -229,7 +188,6 @@ img{
     width: 319px;
     height: 365.083px;
     padding: 4px;
-    /* text-align: center; */
     position: relative;
     bottom: 75px;
     right: 150px;
@@ -261,16 +219,6 @@ img{
     border: none;
     outline: none;
 }
-/* .many-games:hover{
-    color: #FF42A5;
-    border: 2px solid #FF42A5;
-}
-.the-games{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 70%;
-    margin: auto;
-} */
 
 .the-games{
     display: flex;
@@ -314,10 +262,7 @@ footer{
     flex-direction: column;
     padding-bottom: 100px;
 }
-/* .footer-head{
-    font-size: 60px;
-    padding-bottom: 20px;
-} */
+
 .logo-footer{
     display: flex;
     align-items: center;
@@ -389,30 +334,11 @@ footer
 }
 
 /* responsive for mobile devices */
-@media screen and (max-width: 576px) {
-    .nav
-    .nav-cointainer
-.logo-cointainer
-nav>ul
-.nav-follow
-.banner-container
-.game-photos
-.games
-.game-box-description
-.features
-.section-title
-.games-btn
-.the-games
-.first-five
-.second-four
-.logo-footer
-.social-icons
-.footer-nav ul
+@media screen and (max-width:576px) {
     
-    {
+    .logo-cointainer{
         flex-direction: column;
     }
-    
 }
 
 
