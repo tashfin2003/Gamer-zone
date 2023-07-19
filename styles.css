@@ -16,6 +16,7 @@ nav {
 .nav-cointainer{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .logo-cointainer{
     display: flex;
@@ -29,6 +30,7 @@ nav {
 }
 nav>ul {
     display: flex;
+
 }
 nav li {
     list-style: none;
@@ -40,38 +42,129 @@ nav li a {
     text-decoration: none;
     color: #424242;
 }
+/* banner styles start */
 .banner-container{
-    background-image: url("Images/Group\ 14.png");
-    height: 100vh;
     display: flex;
-    background-size: cover;
+    justify-content: space-around;
     align-items: center;
-    padding: 100px;
-    justify-content: space-between;
-    padding-bottom: 0px;
-}
-.banner-description{
-    align-items: ;
+    background-image: url(Images/Group\ 14.png);
+    background-repeat: none;
+    height: 100vh;
 }
 .banner-ul{
-    text-decoration: none;
     list-style: none;
 }
-.banner-head1{
-    font-size: 30px;
+.banner-head-one{
+    font-size: 38px;
+}
+.banner-head-two{
+    font-size: 95px;
+    color: #BA50D4;
+}
+/* button styles */
+.btn{
+    margin-top: 20px;
+    gap: 20px;
+    padding: 21px 40px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
     
 }
-.banner-head2{
-    font-size: 95px;
-    font-weight: 800;
-    color: rgb(254, 83, 111);
+.banner-button{
+    gap: 20px;
 }
-.banner-img{
-    width: 100%;
+.banner-btn1{
+    background-color: #FF42A5;
 }
+.banner-btn2{
+    background-color: #4EC5F7;
+    
+}
+.light-gray{
+    color: gray;
+}
+/* banner section end */
+
+
+/* .online-games{
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    margin-top: 30px;
+} */
+/* Online game section */
+
 .online-games{
     justify-content: center;
     align-items: center;
     padding-top: 40px;
     margin-top: 30px;
+}
+.funny-video{
+    color: #BA50D4;
+}
+.games-description{
+    align-items: center;
+}
+.game-photos{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 80px;   
+}
+.game-img{
+    width: 250px;
+    height:300px ;
+    padding: 20px;
+}
+.games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/* game box description */
+.game-box-description{
+    display: flex;
+    justify-content: center;
+    
+}
+/* features section */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* .features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+} */
+.feature-img img{
+    height: 35%;
+    margin-left: 100px;
+}
+.mini-photo{
+    border-radius: 8px;
+    color: #FFF;
+    width: 319px;
+    height: 365.083px;
+    padding: 4px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
