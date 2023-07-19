@@ -18,6 +18,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 .logo-cointainer{
     display: flex;
@@ -49,12 +50,25 @@ nav li a {
     text-decoration: none;
     color: #424242;
 }
+.nav-follow{
+    display: flex;
+    
+}
+/* .head-social{
+    padding-left: 10px;
+}
+. */
+/* .head-social{
+    gap: 20px;
+} */
+
 /* banner styles start */
 .banner-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-image: url(Images/Group\ 14.png);
+    /* background-size: 50%; */
     background-repeat: none;
     height: 100vh;
 }
@@ -181,10 +195,12 @@ nav li a {
     padding-left: 20px;
 } */
 .feature-img img{
-    height: 35%;
+    height: 350px;
     margin-left: 47px;
 }
 .mini-photo{
+    margin-top: 0px;
+    margin-bottom: 0px;
     border-radius: 8px;
     color: #FFF;
     width: 319px;
@@ -192,7 +208,7 @@ nav li a {
     padding: 4px;
     text-align: center;
     position: relative;
-    bottom: 100px;
+    bottom: 75px;
 }
 .section-title{
     display: flex;
@@ -221,8 +237,34 @@ nav li a {
     border: none;
     outline: none;
 }
-.many-games :hover{
+/* .many-games:hover{
     color: #FF42A5;
+    border: 2px solid #FF42A5;
+}
+.the-games{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 70%;
+    margin: auto;
+} */
+
+.the-games{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.first-five{
+    display: flex;
+}
+.second-four{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.many-games :hover{
+    color: #BA50D4;
+    font-weight: bolder;
     border: 2px solid #FF42A5;
 }
 
@@ -230,6 +272,7 @@ nav li a {
 /* footer styles */
 
 footer{
+    margin-top: 70px;
     background: black;
     height: auto;
     width: 100vw;
@@ -302,12 +345,47 @@ footer{
     opacity: 0.7;
     
 }
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+}
+footer
 .footer-bottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 40px;
+    border-radius: 50px;
+}
+
+/* responsive for mobile devices */
+@media screen and (max-width: 576px) {
+    .nav
+    .nav-cointainer
+.logo-cointainer
+nav>ul
+.nav-follow
+.banner-container
+.game-photos
+.games
+.game-box-description
+.features
+.section-title
+.games-btn
+.the-games
+.first-five
+.second-four
+.logo-footer
+.social-icons
+.footer-nav ul
+    
+    {
+        flex-direction: column;
+    }
+    
 }
 
 
