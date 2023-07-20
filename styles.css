@@ -336,7 +336,7 @@ footer
 }
 
 /* responsive for mobile devices */
-@media screen and (max-width:576px) {
+@media screen and (max-width:425px) {
     ..game-box-description{
         flex-direction: column;
 
@@ -349,6 +349,60 @@ footer
     .features{
         
         flex-direction: column;
+    }
+    .feature-img img .big-img-feature{
+        height: 0%;
+        
+    }
+    /* ..feature-img img {
+        height: 0px;
+    }
+    .big-img-feature{
+        height: 0px;
+    } */
+    header{
+
+    }
+    .nav-container{
+        flex-direction: column;
+        /* flex-wrap: wrap */
+    }
+    .footer-nav{
+        flex-direction: column;
+    }
+    .footer-nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-photo{
+        width: 100%;
+    }
+    .banner-container{
+        flex-direction: column;
+        /* padding-bottom: 100px; */
+    }
+    .banner-ul{
+        list-style: none;
+    }
+    .banner-head-one{
+        font-size: 30px;
+    }
+    .banner-head-two{
+        font-size: 40px;
+        color: #BA50D4;
+    }
+    .btn{
+        margin-top: 5px;
+        gap: 20px;
+        padding: 8px 15px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 0px;
+        
+        
+    }
+    .banner-button{
+        gap: 20px;
     }
 }
 
