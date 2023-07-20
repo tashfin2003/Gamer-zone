@@ -154,6 +154,67 @@ nav li a {
     flex-direction: column;
     text-align: center;
 }
+/* hover img */
+
+
+
+
+
+
+.container {
+    position: relative;
+    /* width: 100%; */
+    max-width: 400px;
+    /* display: flex; */
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 80px;   
+  }
+  
+    .overlay {
+        border-radius: 5px;
+    width: 215px;
+    height:262px ;
+    /* padding: 20px; */
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 27px;
+    right: 0;
+    /* height: 100%;
+    width: 100%; */
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(68, 63, 63, 0.8);
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  
+  }
+
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .fa-user:hover {
+    color: #eee;
+  }
+
+
+
+
+
+
+
+
 /* game box description */
 .game-box-description{
     display: flex;
@@ -226,6 +287,8 @@ nav li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .first-five{
     display: flex;
@@ -234,6 +297,8 @@ nav li a {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
     
 }
 .many-games:hover{
@@ -337,7 +402,7 @@ footer
 
 /* responsive for mobile devices */
 @media screen and (max-width:425px) {
-    ..game-box-description{
+    .game-box-description{
         flex-direction: column;
 
         align-items: flex-start;
@@ -404,6 +469,29 @@ footer
     .banner-button{
         gap: 20px;
     }
+    .the-games{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 0%;
+    margin-right: 20%;
+}
+.first-five{
+    display: flex;
+}
+    .second-four{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    .last-three{
+        display: hide;
+    }
+
+
 }
 
 
